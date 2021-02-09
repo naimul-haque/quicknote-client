@@ -5,10 +5,8 @@ import Fonts from '../styles/fonts'
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Box bg="body" minH="100vh">
-        <Fonts />
-        <Component {...pageProps} />
-      </Box>
+      <Fonts />
+      <Component {...pageProps} />
     </ChakraProvider>
   )
 }
