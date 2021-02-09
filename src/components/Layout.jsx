@@ -1,18 +1,27 @@
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Box, Grid, GridItem } from '@chakra-ui/react'
+import Navbar from './Navbar'
 import Sidebar from './Sidebar'
 
 export default function Layout({ children }) {
   return (
-    <Grid templateColumns="repeat(6, 1fr)">
-      <GridItem>
-        {/* sidebar area */}
-        <Sidebar />
-      </GridItem>
-
-      <GridItem colSpan={5}>
-        {/* dashboard content area */}
-        {children}
-      </GridItem>
-    </Grid>
+    <>
+      <Navbar />
+      <Grid templateColumns="repeat(6, 1fr)">
+        <GridItem>
+          {/* sidebar area */}
+          <Sidebar />
+        </GridItem>
+        <GridItem
+          colSpan={5}
+          maxH="100vh"
+          bg="body"
+          overflowY="scroll"
+          position="relative"
+        >
+          {/* dashboard content area */}
+          <Box pt={24}>{children}</Box>
+        </GridItem>
+      </Grid>
+    </>
   )
 }

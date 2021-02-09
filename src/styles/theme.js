@@ -8,7 +8,7 @@ export default {
   },
   colors: {
     ...theme.colors,
-    body: '#FAFAFA',
+    body: '#f3f3f3',
     primary: '#0052CC',
   },
 }

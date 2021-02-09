@@ -6,7 +6,7 @@ export default function NavItem({ isActive, icon, text }) {
       color={isActive ? 'primary' : 'gray.600'}
       fontWeight={600}
       variant="link"
-      fontSize="xl"
+      fontSize="lg"
       isFullWidth
       justifyContent="flex-start"
       leftIcon={icon}
