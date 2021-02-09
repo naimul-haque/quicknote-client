@@ -1,9 +1,9 @@
-import HelloWorld from '../components/HelloWorld'
+import Dashboard from '../components/Dashboard'
 
 export default function Home() {
   return (
     <div>
-      <HelloWorld />
+      <Dashboard />
     </div>
   )
 }
